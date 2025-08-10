@@ -1,0 +1,20 @@
+
+:root{--bg:#f3f6fb;--card:#fff}
+*{box-sizing:border-box}
+body{font-family:Inter,Segoe UI,Roboto,Arial;background:var(--bg);display:flex;justify-content:center;align-items:flex-start;padding:20px}
+#ui{width:980px}
+.top{display:flex;gap:8px;align-items:center}
+.rooms, .join{margin-top:12px}
+button{padding:10px 14px;border-radius:8px;border:0;background:#3b82f6;color:white;cursor:pointer}
+input{padding:8px;border-radius:8px;border:1px solid #dfe7f2}
+.hidden{display:none}
+#boardContainer{background:var(--card);padding:12px;border-radius:10px;box-shadow:0 6px 20px rgba(2,6,23,0.08)}
+#topBar{display:flex;justify-content:space-between;margin-bottom:8px}
+#playersList{margin-top:10px}
+.playerRow{display:flex;gap:10px;align-items:center;padding:6px}
+.playerDot{width:36px;height:36px;border-radius:50%;overflow:hidden}
+.playerDot img{width:100%;height:100%;object-fit:cover}
+.micIcon{width:18px;height:18px;margin-left:6px;vertical-align:middle}
+#chatWrap, #inGameChat{margin-top:10px}
+#chatLog, #chatLogGame{max-height:150px;overflow:auto;background:#fff;padding:8px;border-radius:8px;border:1px solid #e6edf5}
+@media (max-width:800px){ #ui{width:100%;padding:8px} canvas{width:100%;height:auto} }
