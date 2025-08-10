@@ -1,6 +1,6 @@
 
 // ludo-client.js — client with avatar upload + mic + WebRTC signalling (simplified)
-const socket = io();
+const socket = io("https://ludo-2td8.onrender.com");
 
 // UI refs
 const nameInput = document.getElementById('nameInput');
